@@ -17,16 +17,16 @@
 $(call inherit-product, device/moto/wingray/device_base.mk)
 
 PRODUCT_COPY_FILES += \
-    device/moto/stingray_cdma/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options \
-    device/moto/stingray_cdma/prop/libmoto_ril.so:system/lib/libmoto_ril.so \
-    device/moto/stingray_cdma/prop/chat-ril:system/bin/chat-ril \
-    device/moto/stingray_cdma/prop/pppd-ril:system/bin/pppd-ril \
-    device/moto/stingray_cdma/prop/tty2ttyd:system/bin/tty2ttyd \
-    device/moto/stingray_cdma/prop/libpppd_plugin-ril.so:system/lib/libpppd_plugin-ril.so \
-    device/moto/stingray_cdma/prop/libreference-ril.so:system/lib/libreference-ril.so \
-    device/moto/stingray_cdma/prop/libril_rds.so:system/lib/libril_rds.so \
-    device/moto/stingray_cdma/prop/libril.so:system/lib/libril.so \
+    device/moto/utms_everest/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options \
+    device/moto/utms_everest/prop/libmoto_ril.so:system/lib/libmoto_ril.so \
+    device/moto/utms_everest/prop/chat-ril:system/bin/chat-ril \
+    device/moto/utms_everest/prop/pppd-ril:system/bin/pppd-ril \
+    device/moto/utms_everest/prop/tty2ttyd:system/bin/tty2ttyd \
+    device/moto/utms_everest/prop/libpppd_plugin-ril.so:system/lib/libpppd_plugin-ril.so \
+    device/moto/utms_everest/prop/libreference-ril.so:system/lib/libreference-ril.so \
+    device/moto/utms_everest/prop/libril_rds.so:system/lib/libril_rds.so \
+    device/moto/utms_everest/prop/libril.so:system/lib/libril.so \
 
 # Overrides
 DEVICE_PACKAGE_OVERLAYS := \
-    device/moto/stingray_cdma/overlay device/moto/wingray/overlay
+    device/moto/utms_everest/overlay device/moto/wingray/overlay

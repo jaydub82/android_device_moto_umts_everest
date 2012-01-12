@@ -33,12 +33,12 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
-$(call inherit-product, device/moto/stingray_cdma/device.mk)
+$(call inherit-product, device/moto/utms_everest/device.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_stingray_cdma
-PRODUCT_DEVICE := stingray_cdma
-PRODUCT_BRAND := verizon
-PRODUCT_MODEL := Xoom
-PRODUCT_MANUFACTURER := Motorola
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=trygon BUILD_ID=ITL41F BUILD_DISPLAY_ID="EOS IML74K Nightly $(EOS_BUILD_NUMBER)" BUILD_FINGERPRINT="verizon/trygon/stingray:3.2.4/HLK75F/221360:user/release-keys" PRIVATE_BUILD_DESC="trygon-user 3.2.4 HLK75F 221360 release-keys"
+PRODUCT_NAME := full_utms_everest
+PRODUCT_DEVICE := utms_everest
+PRODUCT_BRAND := MOTO
+PRODUCT_MODEL := MZ601
+PRODUCT_MANUFACTURER := motorola
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=RTCOREEU BUILD_ID=ITL41F BUILD_DISPLAY_ID="EOS IML74K Nightly $(EOS_BUILD_NUMBER)" BUILD_FINGERPRINT="MOTO/RTCOREEU/umts_everest:3.2/H.6.5-17-3/1321319666:user/ota-rel-keys,release-keys" PRIVATE_BUILD_DESC="umts_everest-user 3.2 H.6.5-17-3 1321319666 ota-rel-keys,release-keys"
