@@ -26,6 +26,8 @@ PRODUCT_COPY_FILES += \
     device/moto/utms_everest/prop/libreference-ril.so:system/lib/libreference-ril.so \
     device/moto/utms_everest/prop/libril_rds.so:system/lib/libril_rds.so \
     device/moto/utms_everest/prop/libril.so:system/lib/libril.so \
+    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+    device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml \
 
 # Overrides
 DEVICE_PACKAGE_OVERLAYS := \
