@@ -33,11 +33,11 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
-$(call inherit-product, device/moto/utms_everest/device.mk)
+$(call inherit-product, device/moto/umts_everest/device.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_utms_everest
-PRODUCT_DEVICE := utms_everest
+PRODUCT_NAME := full_umts_everest
+PRODUCT_DEVICE := umts_everest
 PRODUCT_BRAND := MOTO
 PRODUCT_MODEL := MZ601
 PRODUCT_MANUFACTURER := motorola

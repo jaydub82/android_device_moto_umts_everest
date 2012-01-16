@@ -17,20 +17,18 @@
 $(call inherit-product, device/moto/wingray/device_base.mk)
 
 PRODUCT_COPY_FILES += \
-    device/moto/utms_everest/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options \
-    device/moto/utms_everest/prop/libmoto_ril.so:system/lib/libmoto_ril.so \
-    device/moto/utms_everest/prop/chat-ril:system/bin/chat-ril \
-    device/moto/utms_everest/prop/pppd-ril:system/bin/pppd-ril \
-    device/moto/utms_everest/prop/tty2ttyd:system/bin/tty2ttyd \
-    device/moto/utms_everest/prop/libpppd_plugin-ril.so:system/lib/libpppd_plugin-ril.so \
-    device/moto/utms_everest/prop/libreference-ril.so:system/lib/libreference-ril.so \
-    device/moto/utms_everest/prop/libril_rds.so:system/lib/libril_rds.so \
-    device/moto/utms_everest/prop/libril.so:system/lib/libril.so \
+    device/moto/umts_everest/pppd-ril.options:system/etc/ppp/peers/pppd-ril.options \
+    device/moto/umts_everest/prop/libmoto_ril.so:system/lib/libmoto_ril.so \
+    device/moto/umts_everest/prop/chat-ril:system/bin/chat-ril \
+    device/moto/umts_everest/prop/pppd-ril:system/bin/pppd-ril \
+    device/moto/umts_everest/prop/tty2ttyd:system/bin/tty2ttyd \
+    device/moto/umts_everest/prop/libril.so:system/lib/libril.so \
+    device/moto/umts_everest/prop/libpppd_plugin-ril.so:system/lib/libpppd_plugin-ril.so \
     frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-    device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml \
+    device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml 
 
 # Overrides
 DEVICE_PACKAGE_OVERLAYS := \
-    device/moto/utms_everest/overlay device/moto/wingray/overlay
+    device/moto/umts_everest/overlay device/moto/wingray/overlay
 $(call inherit-product-if-exists, vendor/eos/common.mk)
 $(call inherit-product-if-exists, vendor/eos/tablets/common.mk)
