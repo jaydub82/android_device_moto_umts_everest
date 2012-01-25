@@ -27,8 +27,5 @@ ro.build.bp.config.version=UCAEVEUB1B8EU03F.0R
 # Google use the system property to control if allow device to be unlock without SIM
 keyguard.no_require_sim=true
 
-# Enable APN authentication for a specific MCCMNC, "ALL" for all MCCMNC
-umts.apn_authentication.enable=ALL
-
 drm.service.enabled=true
 
