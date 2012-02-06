@@ -39,5 +39,7 @@
         <item>/dev/bus/usb/001</item>
         <item>/dev/bus/usb/002</item>
     </string-array>
+
     <bool name="config_utmsEverestRadio">true</bool>
+    <bool name="config_hideMobileSignalOnWifi">true</bool>
 </resources>
