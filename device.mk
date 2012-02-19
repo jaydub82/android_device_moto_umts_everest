@@ -29,4 +29,4 @@ PRODUCT_COPY_FILES += \
 
 # Overrides
 DEVICE_PACKAGE_OVERLAYS := \
-    device/moto/utms_everest/overlay device/moto/wingray/overlay
+    device/moto/umts_everest/overlay device/moto/wingray/overlay
